@@ -14,6 +14,13 @@ const plexSans = IBM_Plex_Sans({
   weight: ["400", "500", "600"],
 });
 
+// This app reads the Supabase session (cookies) in the Header on every page,
+// so the static shell can't be prerendered under Cache Components' default
+// "instant" validation. Opting out here keeps pages server-rendered per
+// request, which is correct for now; streaming the header behind a
+// <Suspense> boundary is a later optimization, not a Phase 1 blocker.
+export const instant = false;
+
 export const metadata: Metadata = {
   title: "Hatóanyag Mester — SOTE gyógyszertan vizsgakártyák",
   description:
