@@ -1,0 +1,1 @@
+A `drugs-seed.json` és az abból generált `../migrations/0002_seed_drugs.sql` nagy méretük miatt (≈1089 sor) nem ebben a repóban, hanem közvetlenül a Supabase adatbázisban élnek — a migráció futtatásával kerültek be. A seed forrása az eredeti `hatastanpro.html` tanulókártya-export; újragenerálni a projekt fejlesztési jegyzetei alapján lehet, ha az eredeti adat változik.
