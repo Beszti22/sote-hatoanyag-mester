@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { SubjectTabs } from "@/components/SubjectTabs";
 
 const sampleDrug = {
   name: "PARACETAMOL",
@@ -20,14 +21,15 @@ export default function Home() {
         {/* Hero */}
         <section className="border-b border-rule py-16">
           <p className="font-sans text-sm tracking-wide text-muted">
-            SOTE gyógyszertan · 1089 hatóanyag
+            SOTE hallgatóknak
           </p>
           <h1 className="mt-3 max-w-xl font-serif text-5xl font-semibold leading-tight text-ink">
-            Legyél 5-ös gyógyszertanból.
+            Tanulj okosan, tantárgyanként.
           </h1>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-muted">
-            Minden hatóanyag egy helyen: mechanizmus, javallat és mellékhatás —
-            kategóriák szerint szűrve, saját haladással.
+            A Puskamester tantárgyanként gyűjti össze a lényeget — kezdésnek
+            gyógyszertan hatóanyagkártyákkal, aztán jönnek a többi tantárgy
+            jegyzetei és összefoglalói is.
           </p>
           <div className="mt-8 flex items-center gap-4">
             <Link
@@ -44,13 +46,21 @@ export default function Home() {
             </Link>
           </div>
           <p className="mt-4 text-sm text-muted">
-            Az első 20 hatóanyag ingyenes, bejelentkezés után azonnal elérhető.
+            Tantárgyanként az első 20 tétel ingyenes, bejelentkezés után azonnal elérhető.
           </p>
+        </section>
+
+        {/* Subject switcher */}
+        <section id="tantargyak" className="scroll-mt-20 border-b border-rule py-16">
+          <p className="mb-4 text-sm text-muted">Tantárgyak</p>
+          <SubjectTabs activeSlug="gyogyszertan" />
         </section>
 
         {/* Sample monograph card */}
         <section className="py-16">
-          <p className="mb-4 text-sm text-muted">Egy kártya így néz ki</p>
+          <p className="mb-4 text-sm text-muted">
+            Egy gyógyszertan kártya így néz ki
+          </p>
           <article className="rounded-sm border border-rule bg-paper-raised p-8">
             <div className="flex items-baseline justify-between">
               <h2 className="font-serif text-2xl font-semibold text-ink">
@@ -92,7 +102,7 @@ export default function Home() {
           <div>
             <p className="text-xs font-medium text-accent-ink">Hozzáférés</p>
             <p className="mt-2 text-[15px] leading-relaxed text-ink">
-              20 hatóanyag ingyen, a teljes 1089-hez előfizetés kell.
+              Tantárgyanként 20 tétel ingyen, a teljes anyaghoz előfizetés kell.
             </p>
           </div>
           <div>
@@ -112,7 +122,7 @@ export default function Home() {
 
       <footer className="border-t border-rule py-8">
         <div className="mx-auto max-w-3xl px-6 text-sm text-muted">
-          Hatóanyag Mester · SOTE gyógyszertan vizsgakártyák
+          Puskamester · SOTE hallgatóknak tantárgyanként
         </div>
       </footer>
     </div>
