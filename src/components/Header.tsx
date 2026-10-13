@@ -12,7 +12,7 @@ export async function Header() {
     <header className="border-b border-rule">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
         <Link href="/" className="font-serif text-lg font-semibold text-ink">
-          Puskamester
+          Tudástár
         </Link>
         <nav className="flex items-center gap-5">
           <Link href="/#tantargyak" className="text-sm text-muted hover:text-ink transition-colors">
