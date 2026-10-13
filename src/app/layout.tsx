@@ -22,7 +22,7 @@ const plexSans = IBM_Plex_Sans({
 export const instant = false;
 
 export const metadata: Metadata = {
-  title: "Puskamester — SOTE tanulást segítő anyagok",
+  title: "Tudástár — SOTE tanulást segítő anyagok",
   description:
     "Tantárgyanként rendszerezett tanulási segédletek SOTE hallgatóknak — kezdésnek gyógyszertan hatóanyagkártyák, tovább bővülő tantárgyakkal.",
 };
