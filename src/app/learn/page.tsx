@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { SubjectTabs } from "@/components/SubjectTabs";
 import { FlashcardDeck } from "@/components/FlashcardDeck";
 import { createClient } from "@/lib/supabase/server";
 import { getSubscriptionStatus } from "@/lib/access";
@@ -63,7 +64,11 @@ export default async function LearnPage({
       <Header />
 
       <main className="mx-auto max-w-3xl px-6 py-12">
-        <h1 className="font-serif text-3xl font-semibold text-ink">Tanulás</h1>
+        <SubjectTabs activeSlug="gyogyszertan" />
+
+        <h1 className="mt-6 font-serif text-3xl font-semibold text-ink">
+          Gyógyszertan
+        </h1>
 
         {!isSubscribed && (
           <div className="mt-4 rounded-sm border border-rule bg-accent-soft px-5 py-4">
