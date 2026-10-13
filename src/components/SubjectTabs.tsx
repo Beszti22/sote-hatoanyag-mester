@@ -3,7 +3,7 @@ import { SUBJECTS } from "@/lib/subjects";
 
 /**
  * Subject switcher — shown on the landing page and above each subject's
- * learning view. Only one subject is active today (gyógyszertan); the
+ * learning view. Only one subject is active today (hatástan); the
  * rest render as disabled "Hamarosan" tabs so visitors see the roadmap.
  */
 export function SubjectTabs({ activeSlug }: { activeSlug?: string }) {
