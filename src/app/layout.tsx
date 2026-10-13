@@ -22,9 +22,9 @@ const plexSans = IBM_Plex_Sans({
 export const instant = false;
 
 export const metadata: Metadata = {
-  title: "Hatóanyag Mester — SOTE gyógyszertan vizsgakártyák",
+  title: "Puskamester — SOTE tanulást segítő anyagok",
   description:
-    "Interaktív hatóanyag-kártyák orvostanhallgatóknak: mechanizmus, javallat, mellékhatás egy pillantásra.",
+    "Tantárgyanként rendszerezett tanulási segédletek SOTE hallgatóknak — kezdésnek gyógyszertan hatóanyagkártyák, tovább bővülő tantárgyakkal.",
 };
 
 export default function RootLayout({
