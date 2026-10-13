@@ -20,7 +20,9 @@ export async function Header() {
           </Link>
           {user ? (
             <>
-              <span className="text-sm text-muted">{user.email}</span>
+              <span className="text-sm text-muted">
+                {(user.user_metadata?.full_name as string | undefined) ?? user.email}
+              </span>
               <LogoutButton />
             </>
           ) : (
