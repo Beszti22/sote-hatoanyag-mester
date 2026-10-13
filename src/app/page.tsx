@@ -27,7 +27,7 @@ export default function Home() {
             Tanulj okosan, tantárgyanként.
           </h1>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-muted">
-            A Puskamester tantárgyanként gyűjti össze a lényeget — kezdésnek
+            A Tudástár tantárgyanként gyűjti össze a lényeget — kezdésnek
             gyógyszertan hatóanyagkártyákkal, aztán jönnek a többi tantárgy
             jegyzetei és összefoglalói is.
           </p>
@@ -122,7 +122,7 @@ export default function Home() {
 
       <footer className="border-t border-rule py-8">
         <div className="mx-auto max-w-3xl px-6 text-sm text-muted">
-          Puskamester · SOTE hallgatóknak tantárgyanként
+          Tudástár · SOTE hallgatóknak tantárgyanként
         </div>
       </footer>
     </div>
