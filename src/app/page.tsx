@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-muted">
             A Tudástár tantárgyanként gyűjti össze a lényeget — kezdésnek
-            gyógyszertan hatóanyagkártyákkal, aztán jönnek a többi tantárgy
+            hatástan hatóanyagkártyákkal, aztán jönnek a többi tantárgy
             jegyzetei és összefoglalói is.
           </p>
           <div className="mt-8 flex items-center gap-4">
@@ -53,13 +53,13 @@ export default function Home() {
         {/* Subject switcher */}
         <section id="tantargyak" className="scroll-mt-20 border-b border-rule py-16">
           <p className="mb-4 text-sm text-muted">Tantárgyak</p>
-          <SubjectTabs activeSlug="gyogyszertan" />
+          <SubjectTabs activeSlug="hatastan" />
         </section>
 
         {/* Sample monograph card */}
         <section className="py-16">
           <p className="mb-4 text-sm text-muted">
-            Egy gyógyszertan kártya így néz ki
+            Egy hatástan kártya így néz ki
           </p>
           <article className="rounded-sm border border-rule bg-paper-raised p-8">
             <div className="flex items-baseline justify-between">
