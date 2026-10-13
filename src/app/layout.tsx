@@ -24,7 +24,7 @@ export const instant = false;
 export const metadata: Metadata = {
   title: "Tudástár — SOTE tanulást segítő anyagok",
   description:
-    "Tantárgyanként rendszerezett tanulási segédletek SOTE hallgatóknak — kezdésnek gyógyszertan hatóanyagkártyák, tovább bővülő tantárgyakkal.",
+    "Tantárgyanként rendszerezett tanulási segédletek SOTE hallgatóknak — kezdésnek hatástan hatóanyagkártyák, tovább bővülő tantárgyakkal.",
 };
 
 export default function RootLayout({
