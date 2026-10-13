@@ -64,10 +64,10 @@ export default async function LearnPage({
       <Header />
 
       <main className="mx-auto max-w-3xl px-6 py-12">
-        <SubjectTabs activeSlug="gyogyszertan" />
+        <SubjectTabs activeSlug="hatastan" />
 
         <h1 className="mt-6 font-serif text-3xl font-semibold text-ink">
-          Gyógyszertan
+          Hatástan
         </h1>
 
         {!isSubscribed && (
